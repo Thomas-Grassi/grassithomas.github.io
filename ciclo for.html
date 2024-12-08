@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ciclo for</title>
+</head>
+<style>
+    body{
+        font-family: 'Times New Roman', Times, serif;
+        color: black;
+    }
+    h1{
+        text-align: center;
+        color: red;
+        font-size: 26px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+</style>
+<body>
+    <h1>Ciclo For in Javascript</h1>
+    <label for="iterazioni">inserisci il numero:</label>
+    <input type="number" id="iterazioni">
+    <button onclick="eseguiIterazioni()" style="border: blue;">Avvia l'esecuzione</button>
+
+    <script>
+        function eseguiIterazioni() {
+            let iterazioni = parseInt(document.getElementById('iterazioni').value, 10);
+                for (let i = 0; i < iterazioni+1; i++) {
+                    console.log(i + "-" + (iterazioni-i));
+                }
+        }
+    </script>
+</body>
+</html>

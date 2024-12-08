@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Sequenza di Fibonacci
+        </title>
+    </head>
+    <center><h1>
+        Sequenza di Fibonacci
+    </h1></center>
+    <body>
+        <button onclick="funzione()" value="cliccami">CLICCAMI</button>
+        <div>
+            <p id="numero"></p>
+        </div>
+    </body>
+    <script>
+        function funzione(){
+        let risultato = 0;
+        let num1 = 1;
+        let num2 = 1;
+        const dato = [];
+        let i = 0;
+        dato.push(num1);
+        dato.push(num2);
+        do {
+            risultato = num1+num2;
+            num2 = num1;
+            num1 = risultato;
+            dato.push(risultato);
+        } while (risultato<100);
+        document.getElementById("numero").innerHTML = dato;
+    }
+    </script>
+</html>
