@@ -44,4 +44,8 @@ footer{
 a{
     text-decoration: none;
     color: black;
+    transition: 0.3s;
+}
+a:hover{
+    color: orange;
 }
