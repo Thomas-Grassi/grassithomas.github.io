@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="icon" href="immagini/favicon.ico" type="image/x-icon">
+        <title>Anagrafica 2.0</title>
+    </head>
+    <style>
+        h1 {
+            color: red;
+            text-align: center;
+            font-size: 23px;
+            padding-top: 5px;
+            padding-bottom: 15px;
+            font-weight: bold;
+        }
+    </style>
+    <h1>Anagrafica 2.0</h1>
+    Quante persone vuoi inserire?
+    <input type="text" id="personeDaInserire">
+    <button onclick="genera()" value="cliccami">cliccami</button>
+    
+    <script>
+        function validaNomeCognome(str) {
+            const regex = /^[a-zA-Z\s]+$/;
+            return regex.test(str);
+        }
+        
+        function validaDataDiNascita(data) {
+            const regex = /^\d{2}\/\d{2}\/\d{4}$/;
+            return regex.test(data);
+        }
+        
+        function validaIndirizzo(indirizzo) {
+            const regex = /^[a-zA-Z\s]+$/;
+            return regex.test(indirizzo);
+        }
+        
+        function validaEmail(email) {
+            const regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+            return regex.test(email);
+        }
+        
+        function validaPassword(password) {
+            const regex = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{8,}$/;
+            return regex.test(password);
+        }
+        
+        function genera() {
+            let numero = parseInt(document.getElementById("personeDaInserire").value, 10);
+            const dati = [];
+        
+            for (let i = 0; i < numero; i++) {
+                let nome;
+                do {
+                    nome = prompt('inserisci il nome');
+                    if (nome == null) {
+                        alert('esecuzione annullata');
+                        return;
+                    }
+                    if (!validaNomeCognome(nome)) {
+                        alert('nome non valido, inserisci solo lettere e spazi');
+                    }
+                } while (!validaNomeCognome(nome));
+        
+                dati.push(nome);
+        
+                let cognome;
+                do {
+                    cognome = prompt('inserisci il cognome');
+                    if (cognome == null) {
+                        alert('esecuzione annullata');
+                        return;
+                    }
+                    if (!validaNomeCognome(cognome)) {
+                        alert('cognome non valido, inserisci solo lettere e spazi');
+                    }
+                } while (!validaNomeCognome(cognome));
+        
+                dati.push(cognome);
+        
+                let dataDiNascita;
+                do {
+                    dataDiNascita = prompt('inserisci la data di nascita nel formato dd/mm/yyyy');
+                    if (dataDiNascita == null) {
+                        alert('esecuzione annullata');
+                        return;
+                    }
+                    if (!validaDataDiNascita(dataDiNascita)) {
+                        alert('data di nascita non valida, inseriscila nel formato dd/mm/yyyy');
+                    }
+                } while (!validaDataDiNascita(dataDiNascita));
+        
+                dati.push(dataDiNascita);
+        
+                let indirizzo;
+                do {
+                    indirizzo = prompt('inserisci il via e il numero civico separati da uno spazio (es. "via roma 12")');
+                    if (indirizzo == null) {
+                        alert('esecuzione annullata');
+                        return;
+                    }
+                } while (!indirizzo);
+        
+                dati.push(indirizzo);
+        
+                let email;
+                do {
+                    email = prompt('inserisci la mail');
+                    if (email == null) {
+                        alert('esecuzione annullata');
+                        return;
+                    }
+                    if (!validaEmail(email)) {
+                        alert('email non valida, inserisci un\'email corretta');
+                    }
+                } while (!validaEmail(email));
+        
+                dati.push(email);
+        
+                let password;
+                do {
+                    password = prompt('inserisci la password');
+                    if (password == null) {
+                        alert('esecuzione annullata');
+                        return;
+                    }
+                    if (!validaPassword(password)) {
+                        alert('password non valida, deve avere almeno 8 caratteri, numeri, lettere (maiuscole e minuscole) e almeno un carattere speciale');
+                    }
+                } while (!validaPassword(password));
+        
+                dati.push(password);
+            }
+        
+            localStorage.setItem('datiAnagrafici', JSON.stringify(dati));
+            location.href = 'risultato.html';
+        }
+    </script>            
+</html>
