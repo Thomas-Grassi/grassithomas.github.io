@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TABELLA CSV</title>
+</head>
+    <style>
+        p {
+            font-size: 15px;
+            padding-top: 10px;
+            font-weight: bold;
+            color: black;
+        }
+        h1 {
+            text-align: center;
+            text-transform: uppercase;
+            color: red;
+            font-size: 20px;
+            padding-top: 8px;
+        }
+        table {
+            width: 100%;
+            padding-top: 10px;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+            font-weight: bold;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>TABELLA CSV</h1>
+    <p>
+        Si realizzi un file html contenente una tabella popolata da un file esterno di tipo csv (in allegato).
+Per leggerlo occorre utilizzare l'oggetto "fileReader" la cui sintassi metto in link separato.
+Infine, per scrivere la tabella, occorre "splittare" i dati tramite la funzione "split" relativa alle stringhe in javascript.
+    </p>
+    <input type="file" onchange="readFile(this)" accept=".csv">
+    <table id="tabellaCSV"></table>
+
+    <script>
+        function readFile(input) {
+            let file = input.files[0];
+            let reader = new FileReader();
+
+            reader.readAsText(file);
+            reader.onload = function() {
+                let data = reader.result;
+                let righe = data.split("\n");
+                let tabella = document.getElementById("tabellaCSV");
+                tabella.innerHTML = "";
+
+                for (let i = 0; i < righe.length; i++) {
+                    let riga = righe[i].split(",");
+                    let tr = document.createElement("tr");
+                    for (let j = 0; j < riga.length; j++) {
+                        let cell;
+                        if (i === 0) {
+                            cell = document.createElement("th");
+                        } else {
+                            cell = document.createElement("td");
+                        }
+                        cell.textContent = riga[j].trim();
+                        tr.appendChild(cell);
+                    }
+                    tabella.appendChild(tr);
+                }
+            }
+        }
+    </script>
+</body>
+</html>
