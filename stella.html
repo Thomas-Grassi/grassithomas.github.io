@@ -28,6 +28,9 @@
             color: orangered;
             text-decoration: none;
         }
+        @keyframes mymove {
+  50% {transform: rotate(360deg);}
+}
     </style>
     <body>
         <h1>canvas</h1>
@@ -52,7 +55,7 @@
             </p>
         </p>
         <center>
-            <canvas id="myCanvas" width="500" height="500" style="padding-top: 20px;">
+            <canvas id="myCanvas" width="500" height="500" style="padding-top: 20px; animation: mymove 5s infinite;">
                 il tuo browser non supporta i canvas 
             </canvas>
         </center>
