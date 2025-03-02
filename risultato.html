@@ -59,25 +59,25 @@
             const riga = document.createElement('tr');
     
             const nome = document.createElement('td');
-            nome.textContent = dato.Nome;
+            nome.textContent = dato.Nome || "nessun nome";
     
             const cognome = document.createElement('td');
-            cognome.textContent = dato.Cognome;
+            cognome.textContent = dato.Cognome || "nessun cognome";
     
             const eta = document.createElement('td');
-            eta.textContent = dato.Età;
+            eta.textContent = dato.Età || "nessuna età";
     
             const compleanno = document.createElement('td');
-            compleanno.textContent = dato.Compleanno;
+            compleanno.textContent = dato.Compleanno || "nessuna data di nascita";
     
             const indirizzo = document.createElement('td');
-            indirizzo.textContent = dato.Indirizzo;
+            indirizzo.textContent = dato.Indirizzo || "nessun indirizzo di residenza";
     
             const email = document.createElement('td');
-            email.textContent = dato.Email;
+            email.textContent = dato.Email || "nessuna mail|;
     
             const password = document.createElement('td');
-            password.textContent = dato.Password;
+            password.textContent = dato.Password || "nessuna password";
     
             riga.appendChild(nome);
             riga.appendChild(cognome);
