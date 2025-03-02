@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Griglia Risultati</title>
+    <title>Risultato anagrafica collection dati</title>
 </head>    
 <style>
     body{
@@ -59,25 +59,25 @@
             const riga = document.createElement('tr');
     
             const nome = document.createElement('td');
-            nome.textContent = dato.Nome || "nessun nome";
+            nome.textContent = dato.Nome;
     
             const cognome = document.createElement('td');
-            cognome.textContent = dato.Cognome || "nessun cognome";
+            cognome.textContent = dato.Cognome;
     
             const eta = document.createElement('td');
-            eta.textContent = dato.Età || "nessuna età";
+            eta.textContent = dato.Età;
     
             const compleanno = document.createElement('td');
-            compleanno.textContent = dato.Compleanno || "nessuna data di nascita";
+            compleanno.textContent = dato.Compleanno;
     
             const indirizzo = document.createElement('td');
-            indirizzo.textContent = dato.Indirizzo || "nessun indirizzo di residenza";
+            indirizzo.textContent = dato.Indirizzo;
     
             const email = document.createElement('td');
-            email.textContent = dato.Email || "nessuna mail|;
+            email.textContent = dato.Email;
     
             const password = document.createElement('td');
-            password.textContent = dato.Password || "nessuna password";
+            password.textContent = dato.Password;
     
             riga.appendChild(nome);
             riga.appendChild(cognome);
