@@ -1,52 +1,63 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Risultato anagrafica collection dati</title>
-</head>    
+</head>
 <style>
-    body{
+    body {
         text-transform: uppercase;
     }
-    table, th, td {
-      border: 1px solid black;
-      border-collapse: collapse;
-    }
-        table {
-            width: 50%;
-            margin: 0 auto;
-            border-collapse: collapse;
-        }
-        th, td {
-            padding: 10px;
-            text-align: center;
-            font-size: 130%;
-            color: black;
-            font-family: Verdana, sans-serif;
-        }
-    tr:nth-child(even) {
-  background-color: rgb(51, 204, 255);
-}
 
-th:nth-child(even),td:nth-child(even) {
-  background-color: rgb(0, 102, 255);
-}
-        h1 {
-            color: red;
-            text-align: center;
-            padding-top: 10px;
-            padding-bottom: 30px;
-            font-size: 35px;
-            font-family: 'Times New Roman', Times, serif;
-        }
-    </style>
+    table,
+    th,
+    td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+
+    table {
+        width: 50%;
+        margin: 0 auto;
+        border-collapse: collapse;
+    }
+
+    th,
+    td {
+        padding: 10px;
+        text-align: center;
+        font-size: 130%;
+        color: black;
+        font-family: Verdana, sans-serif;
+    }
+
+    tr:nth-child(even) {
+        background-color: rgb(51, 204, 255);
+    }
+
+    th:nth-child(even),
+    td:nth-child(even) {
+        background-color: rgb(0, 102, 255);
+    }
+
+    h1 {
+        color: red;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 30px;
+        font-size: 35px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+</style>
 </head>
+
 <body>
     <h1>Tabella Dati</h1>
     <table>
         <thead>
             <tr>
                 <th colspan="7" style="text-align: center">Dati Utenti</th>
-                <tr>
+            <tr>
                 <th>Nome</th>
                 <th>Cognome</th>
                 <th>Età</th>
@@ -63,33 +74,33 @@ th:nth-child(even),td:nth-child(even) {
         const dati = JSON.parse(localStorage.getItem('vettoreDati')) || [];
         const tabella = document.getElementById('vettoreDati');
         tabella.innerHTML = "";
-    
+
         let i = 0;
         while (i < dati.length) {
             const dato = dati[i];
             const riga = document.createElement('tr');
-    
+
             const nome = document.createElement('td');
-            nome.textContent = dato.Nome;
-    
+            nome.textContent = dato.Nome || "N/A";
+
             const cognome = document.createElement('td');
-            cognome.textContent = dato.Cognome;
-    
+            cognome.textContent = dato.Cognome || "N/A";
+
             const eta = document.createElement('td');
-            eta.textContent = dato.Età;
-    
+            eta.textContent = dato.Età || "N/A";
+
             const compleanno = document.createElement('td');
-            compleanno.textContent = dato.Compleanno;
-    
+            compleanno.textContent = dato.Compleanno || "N/A";
+
             const indirizzo = document.createElement('td');
-            indirizzo.textContent = dato.Indirizzo;
-    
+            indirizzo.textContent = dato.Indirizzo || "N/A";
+
             const email = document.createElement('td');
-            email.textContent = dato.Email;
-    
+            email.textContent = dato.Email || "N/A";
+
             const password = document.createElement('td');
-            password.textContent = dato.Password;
-    
+            password.textContent = dato.Password || "***********";
+
             riga.appendChild(nome);
             riga.appendChild(cognome);
             riga.appendChild(eta);
@@ -97,12 +108,13 @@ th:nth-child(even),td:nth-child(even) {
             riga.appendChild(indirizzo);
             riga.appendChild(email);
             riga.appendChild(password);
-            
+
             tabella.appendChild(riga);
             i++;
         }
     </script>
-    
+
 </body>
+
 </html>
 
