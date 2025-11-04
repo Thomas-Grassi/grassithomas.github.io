@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Anagrafica 1.1</title>
+  <style>
+    :root{
+      --bg-1: linear-gradient(135deg,#0f172a 0%, #07133a 50%, #062a3c 100%);
+      --accent: linear-gradient(90deg,#8ef6e4,#6dd3ff 50%,#9a7bff);
+      --shadow: 0 8px 30px rgba(2,6,23,0.6);
+      --radius: 16px;
+    }
+
+body {
+  background-color: #0f172a; 
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+    .titoloPrincipale {
+      text-align: center;
+      font-size: 2.8rem;
+      font-weight: 800;
+      letter-spacing: 1px;
+      background: var(--accent);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: 0 0 25px rgba(145,200,255,0.25);
+      margin-bottom: 42px;
+      position: relative;
+      animation: fadeInDown 1s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .titoloPrincipale::after {
+      content: "";
+      display: block;
+      width: 120px;
+      height: 4px;
+      background: var(--accent);
+      margin: 16px auto 0;
+      border-radius: 6px;
+      box-shadow: 0 0 20px rgba(110,200,255,0.5);
+      animation: lineGlow 3s ease-in-out infinite alternate;
+    }
+
+    @keyframes fadeInDown {
+      0% {opacity:0; transform:translateY(-20px);}
+      100% {opacity:1; transform:translateY(0);}
+    }
+
+    @keyframes lineGlow {
+      from {opacity:0.6; transform:scaleX(0.9);}
+      to {opacity:1; transform:scaleX(1);}
+    }
+
+.tabellaAnagrafica {
+  width: 90%;
+  max-width: 900px;
+  margin: 40px auto;              
+  border-collapse: collapse;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+ background-color: #0f172a;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  letter-spacing: 0.4px;
+  table-layout: fixed;          
+}
+
+.tabellaAnagrafica th {
+  background: var(--accent);
+  color: #0f172a;
+  text-transform: uppercase;
+  padding: 16px 18px;
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: center;
+  border-bottom: 2px solid rgba(255,255,255,0.15);
+}
+
+.tabellaAnagrafica td {
+  padding: 14px 18px;
+  text-align: center;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  transition: background 0.25s, transform 0.2s;
+  word-wrap: break-word;
+}
+
+.tabellaAnagrafica tr:hover td {
+  background: rgba(255,255,255,0.08);
+  transform: scale(1.01);
+}
+
+.tabellaAnagrafica tr:last-child td {
+  border-bottom: none;
+}
+
+.tabellaAnagrafica td:nth-child(3) {
+  font-weight: 600;
+  color: #a3e8ff;
+}
+
+.tabellaAnagrafica {
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+     .bottoneContainer {
+      margin-bottom: 60px;
+    }
+
+    input[type="button"] {
+      padding: 12px 30px;
+      font-size: 1.1em;
+      border: none;
+      border-radius: 30px;
+      background: linear-gradient(135deg, #3a0ca3, #7209b7);
+      color: white;
+      cursor: pointer;
+      box-shadow: 0 0 10px rgba(0,0,0,0.4);
+      transition: all 0.3s ease;
+    }
+
+    input[type="button"]:hover {
+      background: linear-gradient(135deg, #7209b7, #3a0ca3);
+      transform: scale(1.05);
+      box-shadow: 0 0 20px rgba(255,255,255,0.4);
+    }
+  </style>
+</head>
+<body>
+  <h1 class="titoloPrincipale">Anagrafica 1.1</h1>
+   <div class="bottoneContainer">
+    <input type="button" onclick="alert('Questo è il primo lavoro del Quinto Anno!!!')" value="Cliccami!!">
+  </div>
+  <div id="demo"></div>
+
+  <script>
+    let stampa = "";
+    let xmlhttp = new XMLHttpRequest();
+    xmlhttp.open("GET", "https://raw.githubusercontent.com/Thomas-Grassi/grassithomas.github.io/main/anagrafica.json", true);
+    xmlhttp.send();
+
+    xmlhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        let myObj = JSON.parse(this.responseText);
+        stampa = "<table class='tabellaAnagrafica'>" + "<tr>" + "<th>Nome</th>" + "<th>Cognome</th>" + "<th>Età</th>" + "<th>Nazionalità</th>" + "<th>Scuola di appartenenza</th>" + "</tr>";
+        for (let y in myObj) {
+            stampa += "<tr>" +
+              "<td>" + myObj[y].nome + "</td>" +
+              "<td>" + myObj[y].cognome + "</td>" +
+              "<td>" + myObj[y].eta + "</td>" +
+              "<td>" + myObj[y].nazionalita + "</td>" +
+              "<td>" + myObj[y].scuola + "</td>" +
+            "</tr>";
+        }
+        stampa += "</table>";
+        document.getElementById("demo").innerHTML = stampa;
+      }
+    };
+  </script>
+</body>
+</html>
