@@ -56,11 +56,39 @@
     "scuola": "Liceo Clemente Rebora"
   },
   {
-    "nome": "Mirko",
-    "cognome": "Alessandrini",
-    "eta": 20,
+    "nome": "Lorenzo",
+    "cognome": "Ostuni",
+    "eta": 18,
     "nazionalita": "italiana",
     "scuola": "Liceo Ettore Majorana"
+  },
+  {
+    "nome": "Michele",
+    "cognome": "Spettacolo",
+    "eta": 27,
+    "nazionalita": "italiana",
+    "scuola": "Uni E-campus"
+  },
+  {
+    "nome": "Gilbert",
+    "cognome": "Nana",
+    "eta": 24,
+    "nazionalita": "camerunense",
+    "scuola": "Uni E-campus"
+  },
+  {
+    "nome": "Emanuel",
+    "cognome": "Asslani",
+    "eta": 23,
+    "nazionalita": "albanese",
+    "scuola": "Politecnico di Torino"
+  },
+  {
+    "nome": "Alessandro",
+    "cognome": "Kurti",
+    "eta": 20,
+    "nazionalita": "albanese",
+    "scuola": "Istituto Professionale Carlo Porta"
   },
   {
     "nome": "Gianmarco",
