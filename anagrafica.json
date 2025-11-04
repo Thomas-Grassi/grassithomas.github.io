@@ -2,26 +2,78 @@
   {
     "nome": "Christian",
     "cognome": "Mazzei",
-    "età": 18
+    "eta": 18,
+    "nazionalita": "italiana",
+    "scuola": "ITIS Stanislao Cannizzaro"
   },
   {
     "nome": "Thomas",
     "cognome": "Grassi",
-    "età": 18
+    "eta": 18,
+    "nazionalita": "italiana",
+    "scuola": "ITIS Stanislao Cannizzaro"
   },
   {
     "nome": "Christian",
     "cognome": "Zurzolo",
-    "età": 17
+    "eta": 17,
+    "nazionalita": "italiana",
+    "scuola": "ITIS Stanislao Cannizzaro"
   },
   {
     "nome": "Federico",
     "cognome": "Bellani",
-    "età": 18
+    "eta": 18,
+    "nazionalita": "italiana",
+    "scuola": "ITIS Stanislao Cannizzaro"
   },
   {
     "nome": "Federico",
     "cognome": "Zappa",
-    "età": 18
+    "eta": 18,
+    "nazionalita": "italiana",
+    "scuola": "ITIS Stanislao Cannizzaro"
+  },
+  {
+    "nome": "Mirko",
+    "cognome": "Alessandrini",
+    "eta": 20,
+    "nazionalita": "italiana",
+    "scuola": "Liceo Ettore Majorana"
+  },
+  {
+    "nome": "Simone",
+    "cognome": "Alessandrini",
+    "eta": 22,
+    "nazionalita": "italiana",
+    "scuola": "IS Puecher Olivetti"
+  },
+  {
+    "nome": "Pietro",
+    "cognome": "Prestigiacomo",
+    "eta": 16,
+    "nazionalita": "italiana",
+    "scuola": "Liceo Clemente Rebora"
+  },
+  {
+    "nome": "Mirko",
+    "cognome": "Alessandrini",
+    "eta": 20,
+    "nazionalita": "italiana",
+    "scuola": "Liceo Ettore Majorana"
+  },
+  {
+    "nome": "Gianmarco",
+    "cognome": "Tocco",
+    "eta": 26,
+    "nazionalita": "italiana",
+    "scuola": "Politecnico di Milano"
+  },
+  {
+    "nome": "Tommaso",
+    "cognome": "Moretti",
+    "eta": 19,
+    "nazionalita": "italiana",
+    "scuola": "ITS Enrico Mattei"
   }
 ]
