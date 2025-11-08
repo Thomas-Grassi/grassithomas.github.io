@@ -3,105 +3,161 @@
     "nome": "Christian",
     "cognome": "Mazzei",
     "eta": 18,
-    "nazionalita": "italiana",
+    "nazionalita": "Italiana",
     "scuola": "ITIS Stanislao Cannizzaro"
   },
   {
     "nome": "Thomas",
     "cognome": "Grassi",
     "eta": 18,
-    "nazionalita": "italiana",
+    "nazionalita": "Italiana",
     "scuola": "ITIS Stanislao Cannizzaro"
   },
   {
     "nome": "Christian",
     "cognome": "Zurzolo",
     "eta": 17,
-    "nazionalita": "italiana",
+    "nazionalita": "Italiana",
     "scuola": "ITIS Stanislao Cannizzaro"
   },
   {
     "nome": "Federico",
     "cognome": "Bellani",
     "eta": 18,
-    "nazionalita": "italiana",
+    "nazionalita": "Italiana",
     "scuola": "ITIS Stanislao Cannizzaro"
   },
   {
     "nome": "Federico",
     "cognome": "Zappa",
     "eta": 18,
-    "nazionalita": "italiana",
+    "nazionalita": "Italiana",
     "scuola": "ITIS Stanislao Cannizzaro"
   },
   {
     "nome": "Mirko",
     "cognome": "Alessandrini",
-    "eta": 20,
-    "nazionalita": "italiana",
-    "scuola": "Liceo Ettore Majorana"
+    "eta": 36,
+    "nazionalita": "Italiana",
+    "scuola": "Content Creator, Imprenditore Digitale"
   },
   {
     "nome": "Simone",
     "cognome": "Alessandrini",
-    "eta": 22,
-    "nazionalita": "italiana",
-    "scuola": "IS Puecher Olivetti"
+    "eta": 34,
+    "nazionalita": "Italiana",
+    "scuola": "Content Creator, Influencer, Food Blogger"
   },
   {
     "nome": "Pietro",
     "cognome": "Prestigiacomo",
-    "eta": 16,
-    "nazionalita": "italiana",
-    "scuola": "Liceo Clemente Rebora"
+    "eta": 31,
+    "nazionalita": "Italiana",
+    "scuola": "Content Creator, Imprenditore Digitale"
   },
   {
     "nome": "Lorenzo",
     "cognome": "Ostuni",
-    "eta": 18,
-    "nazionalita": "italiana",
-    "scuola": "Liceo Ettore Majorana"
+    "eta": 30,
+    "nazionalita": "Italiana",
+    "scuola": "Youtuber"
   },
   {
     "nome": "Michele",
     "cognome": "Spettacolo",
-    "eta": 27,
-    "nazionalita": "italiana",
-    "scuola": "Uni E-campus"
+    "eta": 35,
+    "nazionalita": "Italiana",
+    "scuola": "Allenatore di calcio, uno dei migliori della storia"
   },
   {
     "nome": "Gilbert",
     "cognome": "Nana",
     "eta": 24,
-    "nazionalita": "camerunense",
-    "scuola": "Uni E-campus"
+    "nazionalita": "Camerunense",
+    "scuola": "Calciatore Professionista"
   },
   {
     "nome": "Emanuel",
     "cognome": "Asslani",
     "eta": 23,
-    "nazionalita": "albanese",
-    "scuola": "Politecnico di Torino"
+    "nazionalita": "Albanese",
+    "scuola": "Content Creator"
   },
   {
     "nome": "Alessandro",
     "cognome": "Kurti",
     "eta": 20,
-    "nazionalita": "albanese",
-    "scuola": "Istituto Professionale Carlo Porta"
+    "nazionalita": "Albanese",
+    "scuola": "Content Creator, comico"
   },
   {
     "nome": "Gianmarco",
     "cognome": "Tocco",
     "eta": 26,
-    "nazionalita": "italiana",
-    "scuola": "Politecnico di Milano"
+    "nazionalita": "Italiana",
+    "scuola": "Streamer"
   },
   {
     "nome": "Tommaso",
     "cognome": "Moretti",
-    "eta": 19,
-    "nazionalita": "italiana",
-    "scuola": "ITS Enrico Mattei"
+    "eta": 17,
+    "nazionalita": "Italiana",
+    "scuola": "Calciatore professionista del Delfino Pescara 1936"
+  },
+  {
+    "nome": "Andrea",
+    "cognome": "Ciraolo",
+    "eta": 45,
+    "nazionalita": "Italiana",
+    "scuola": "Content Creator"
+  },
+  {
+    "nome": "Jacopo",
+    "cognome": "Lazzarini",
+    "eta": 31,
+    "nazionalita": "Italiana",
+    "scuola": "Rapper nato e cresciuto nel Nether"
+  },
+  {
+    "nome": "Marshall Bruce",
+    "cognome": "Matters",
+    "eta": 53,
+    "nazionalita": "Americana",
+    "scuola": "Rapper, Produttore discografico e Attore"
+  },
+  {
+    "nome": "Lorenzo",
+    "cognome": "Musetti",
+    "eta": 23,
+    "nazionalita": "Italiana",
+    "scuola": "Tennista professionista"
+  },
+  {
+    "nome": "Claudio",
+    "cognome": "Bisio",
+    "eta": 67,
+    "nazionalita": "Italiana",
+    "scuola": "Attore e comico italiano"
+  },
+  {
+    "nome": "Sofia",
+    "cognome": "Brescia",
+    "eta": 10,
+    "nazionalita": "Italiana",
+    "scuola": "Testimonial merendine Motta"
+  },
+  {
+    "nome": "Vince",
+    "cognome": "McMahon",
+    "eta": 80,
+    "nazionalita": "Statunitense",
+    "scuola": "CEO World Wrestling Entertainment"
+  },
+    {
+    "nome": "Brock",
+    "cognome": "Lesnar",
+    "eta": 48,
+    "nazionalita": "Statunitense",
+    "scuola": "Lottatore sotto contratto con World Wrestling Entertainment"
   }
 ]
