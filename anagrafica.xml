@@ -1,0 +1,163 @@
+<Persone>
+  <Persona>
+    <Nome>Christian</Nome>
+    <Cognome>Mazzei</Cognome>
+    <Eta>18</Eta>
+    <Nazionalita>Italiana</Nazionalita>
+    <Scuola>ITIS Stanislao Cannizzaro</Scuola>
+  </Persona>
+  <Persona>
+    <Nome>Thomas</Nome>
+    <Cognome>Grassi</Cognome>
+    <Eta>18</Eta>
+    <Nazionalita>Italiana</Nazionalita>
+    <Scuola>ITIS Stanislao Cannizzaro</Scuola>
+  </Persona>
+  <Persona>
+    <Nome>Christian</Nome>
+    <Cognome>Zurzolo</Cognome>
+    <Eta>17</Eta>
+    <Nazionalita>Italiana</Nazionalita>
+    <Scuola>ITIS Stanislao Cannizzaro</Scuola>
+  </Persona>
+  <Persona>
+    <Nome>Federico</Nome>
+    <Cognome>Bellani</Cognome>
+    <Eta>18</Eta>
+    <Nazionalita>Italiana</Nazionalita>
+    <Scuola>ITIS Stanislao Cannizzaro</Scuola>
+  </Persona>
+  <Persona>
+    <Nome>Federico</Nome>
+    <Cognome>Zappa</Cognome>
+    <Eta>18</Eta>
+    <Nazionalita>Italiana</Nazionalita>
+    <Scuola>ITIS Stanislao Cannizzaro</Scuola>
+  </Persona>
+  <Persona>
+    <Nome>Mirko</Nome>
+    <Cognome>Alessandrini</Cognome>
+    <Eta>36</Eta>
+    <Nazionalita>Italiana</Nazionalita>
+    <Scuola>Content Creator, Imprenditore Digitale</Scuola>
+  </Persona>
+  <Persona>
+    <Nome>Simone</Nome>
+    <Cognome>Alessandrini</Cognome>
+    <Eta>34</Eta>
+    <Nazionalita>Italiana</Nazionalita>
+    <Scuola>Content Creator, Influencer, Food Blogger</Scuola>
+  </Persona>
+  <Persona>
+    <Nome>Pietro</Nome>
+    <Cognome>Prestigiacomo</Cognome>
+    <Eta>31</Eta>
+    <Nazionalita>Italiana</Nazionalita>
+    <Scuola>Content Creator, Imprenditore Digitale</Scuola>
+  </Persona>
+  <Persona>
+    <Nome>Lorenzo</Nome>
+    <Cognome>Ostuni</Cognome>
+    <Eta>30</Eta>
+    <Nazionalita>Italiana</Nazionalita>
+    <Scuola>Youtuber</Scuola>
+  </Persona>
+  <Persona>
+    <Nome>Michele</Nome>
+    <Cognome>Spettacolo</Cognome>
+    <Eta>35</Eta>
+    <Nazionalita>Italiana</Nazionalita>
+    <Scuola>Allenatore di calcio, uno dei migliori della storia</Scuola>
+  </Persona>
+  <Persona>
+    <Nome>Gilbert</Nome>
+    <Cognome>Nana</Cognome>
+    <Eta>24</Eta>
+    <Nazionalita>Camerunense</Nazionalita>
+    <Scuola>Calciatore Professionista</Scuola>
+  </Persona>
+  <Persona>
+    <Nome>Emanuel</Nome>
+    <Cognome>Asslani</Cognome>
+    <Eta>23</Eta>
+    <Nazionalita>Albanese</Nazionalita>
+    <Scuola>Content Creator</Scuola>
+  </Persona>
+  <Persona>
+    <Nome>Alessandro</Nome>
+    <Cognome>Kurti</Cognome>
+    <Eta>20</Eta>
+    <Nazionalita>Albanese</Nazionalita>
+    <Scuola>Content Creator, comico</Scuola>
+  </Persona>
+  <Persona>
+    <Nome>Gianmarco</Nome>
+    <Cognome>Tocco</Cognome>
+    <Eta>26</Eta>
+    <Nazionalita>Italiana</Nazionalita>
+    <Scuola>Streamer</Scuola>
+  </Persona>
+  <Persona>
+    <Nome>Tommaso</Nome>
+    <Cognome>Moretti</Cognome>
+    <Eta>17</Eta>
+    <Nazionalita>San Marinese</Nazionalita>
+    <Scuola>Calciatore professionista del Delfino Pescara 1936</Scuola>
+  </Persona>
+  <Persona>
+    <Nome>Andrea</Nome>
+    <Cognome>Ciraolo</Cognome>
+    <Eta>45</Eta>
+    <Nazionalita>Italiana</Nazionalita>
+    <Scuola>Content Creator</Scuola>
+  </Persona>
+  <Persona>
+    <Nome>Jacopo</Nome>
+    <Cognome>Lazzarini</Cognome>
+    <Eta>31</Eta>
+    <Nazionalita>Italiana</Nazionalita>
+    <Scuola>Rapper nato e cresciuto nel Nether</Scuola>
+  </Persona>
+  <Persona>
+    <Nome>Marshall Bruce</Nome>
+    <Cognome>Matters</Cognome>
+    <Eta>53</Eta>
+    <Nazionalita>Statunitense</Nazionalita>
+    <Scuola>Rapper, Produttore discografico e Attore</Scuola>
+  </Persona>
+  <Persona>
+    <Nome>Lorenzo</Nome>
+    <Cognome>Musetti</Cognome>
+    <Eta>23</Eta>
+    <Nazionalita>Italiana</Nazionalita>
+    <Scuola>Tennista professionista</Scuola>
+  </Persona>
+  <Persona>
+    <Nome>Claudio</Nome>
+    <Cognome>Bisio</Cognome>
+    <Eta>67</Eta>
+    <Nazionalita>Italiana</Nazionalita>
+    <Scuola>Attore e comico italiano</Scuola>
+  </Persona>
+  <Persona>
+    <Nome>Sofia</Nome>
+    <Cognome>Brescia</Cognome>
+    <Eta>10</Eta>
+    <Nazionalita>Italiana</Nazionalita>
+    <Scuola>Testimonial merendine Motta</Scuola>
+  </Persona>
+  <Persona>
+    <Nome>Vince</Nome>
+    <Cognome>McMahon</Cognome>
+    <Eta>80</Eta>
+    <Nazionalita>Statunitense</Nazionalita>
+    <Scuola>CEO World Wrestling Entertainment</Scuola>
+  </Persona>
+  <Persona>
+    <Nome>Brock</Nome>
+    <Cognome>Lesnar</Cognome>
+    <Eta>48</Eta>
+    <Nazionalita>Statunitense</Nazionalita>
+    <Scuola>Lottatore sotto contratto con World Wrestling Entertainment</Scuola>
+  </Persona>
+</Persone>
