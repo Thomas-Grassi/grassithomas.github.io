@@ -1,0 +1,74 @@
+{
+  "store": "WWE Shop",
+  "valuta": "EUR",
+  "categorie": {
+    "tshirt": {
+      "nome": "T-Shirt",
+      "prodotti": [
+        {
+          "id": "TS001",
+          "nome": "Roman Reigns Head of the Table",
+          "prezzo": 29.99,
+          "taglie": ["S", "M", "L", "XL"],
+          "immagine": "https://images.footballfanatics.com/roman-reigns/wwe-roman-reigns-head-of-the-table-graphic-t-shirt-womens_ss4_p-14425685+pv-1+u-11d5d735v5e1h0nx4w1m+v-4c4635f81f644481a5ee745b6f313100.jpg?_hv=2&w=1018"
+        }
+      ]
+    },
+
+    "felpe": {
+      "nome": "Felpe",
+      "prodotti": [
+        {
+          "id": "FP001",
+          "nome": "CM Punk Hoodie",
+          "prezzo": 59.99,
+          "taglie": ["M", "L", "XL"],
+          "immagine": "https://images.footballfanatics.com/cm-punk/wwe-return-of-cm-punk-hoodie-black-mens_ss5_p-201002228+pv-1+u-s46wf8csvy3tuehyuocu+v-8wx0sbktdrw5vkuw21t2.jpg?_hv=2&w=1018"
+        }
+      ]
+    },
+
+    "cinture": {
+      "nome": "Cinture",
+      "prodotti": [
+        {
+          "id": "CB001",
+          "nome": "WWE Universal Championship",
+          "prezzo": 399.99,
+          "materiale": "Metallo e pelle",
+          "immagine": "https://images.footballfanatics.com/wwe-merchandise/undisputed-wwe-universal-championship-replica-title-belt_ss5_p-14422125+pv-2+u-1fdf6rjxyimxvfblrozd+v-mcxoglzbzo2ofq87bdmf.jpg?_hv=2&w=1018"
+        }
+      ]
+    },
+
+    "streaming": {
+      "nome": "Abbonamenti Streaming",
+      "prodotti": [
+        {
+          "id": "ST001",
+          "nome": "Netflix Premium – WWE Included",
+          "prezzo": 17.99,
+          "durata": "1 mese",
+          "qualita": "4K + HDR",
+          "dispositivi": 4,
+          "immagine": "https://upload.wikimedia.org/wikipedia/en/6/6a/RAW_Netflix_debut_poster.jpg"
+        }
+      ]
+    },
+
+    "biglietti": {
+      "nome": "Biglietti Eventi",
+      "prodotti": [
+        {
+          "id": "BG001",
+          "evento": "WrestleMania 41",
+          "data": "2026-04-05",
+          "luogo": "Las Vegas",
+          "posto": "Ringside",
+          "prezzo": 899.99,
+          "immagine": "https://s1.ticketm.net/dam/a/3a5/0b6ab007-9b59-44e3-b011-926498ada3a5_RETINA_PORTRAIT_3_2.jpg"
+        }
+      ]
+    }
+  }
+}
