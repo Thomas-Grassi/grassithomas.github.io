@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<definitions name="Convertitore"
+    targetNamespace="http://localhost/convertitore"
+    xmlns:tns="http://localhost/convertitore"
+    xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns="http://schemas.xmlsoap.org/wsdl/">
+
+    <message name="metriAPolliciRequest">
+        <part name="metri" type="xsd:float"/>
+    </message>
+
+    <message name="metriAPolliciResponse">
+        <part name="risultato" type="xsd:float"/>
+    </message>
+
+    <message name="polliciAMetriRequest">
+        <part name="pollici" type="xsd:float"/>
+    </message>
+
+    <message name="polliciAMetriResponse">
+        <part name="risultato" type="xsd:float"/>
+    </message>
+
+    <portType name="ConvertitorePortType">
+        <operation name="metriAPollici">
+            <input message="tns:metriAPolliciRequest"/>
+            <output message="tns:metriAPolliciResponse"/>
+        </operation>
+
+        <operation name="polliciAMetri">
+            <input message="tns:polliciAMetriRequest"/>
+            <output message="tns:polliciAMetriResponse"/>
+        </operation>
+    </portType>
+
+    <binding name="ConvertitoreBinding" type="tns:ConvertitorePortType">
+        <soap:binding style="rpc"
+            transport="http://schemas.xmlsoap.org/soap/http"/>
+
+        <operation name="metriAPollici">
+            <soap:operation soapAction="metriAPollici"/>
+            <input>
+                <soap:body use="encoded" namespace="urn:convertitore"
+                    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+            </input>
+            <output>
+                <soap:body use="encoded" namespace="urn:convertitore"
+                    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+            </output>
+        </operation>
+
+        <operation name="polliciAMetri">
+            <soap:operation soapAction="polliciAMetri"/>
+            <input>
+                <soap:body use="encoded" namespace="urn:convertitore"
+                    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+            </input>
+            <output>
+                <soap:body use="encoded" namespace="urn:convertitore"
+                    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+            </output>
+        </operation>
+    </binding>
+
+    <service name="ConvertitoreService">
+        <port name="ConvertitorePort" binding="tns:ConvertitoreBinding">
+            <soap:address location="http://localhost/soap_wsdl/server.php"/>
+        </port>
+    </service>
+
+</definitions>

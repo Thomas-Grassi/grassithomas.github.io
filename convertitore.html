@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Convertitore SOAP</title>
+</head>
+<body>
+
+<h2>Convertitore Metri ↔ Pollici (SOAP)</h2>
+
+<input type="number" id="valore" placeholder="Inserisci valore">
+
+<select id="tipo">
+    <option value="metri_pollici">Metri → Pollici</option>
+    <option value="pollici_metri">Pollici → Metri</option>
+</select>
+
+<button onclick="converti()">Converti</button>
+
+<p id="risultato"></p>
+
+<script>
+function converti() {
+    let valore = document.getElementById("valore").value;
+    let tipo = document.getElementById("tipo").value;
+
+    fetch(`proxy.php?valore=${valore}&tipo=${tipo}`)
+        .then(response => response.json())
+        .then(data => {
+            if(data.errore) {
+                document.getElementById("risultato").innerText = "Errore: " + data.errore;
+            } else {
+                document.getElementById("risultato").innerText = "Risultato: " + data.risultato;
+            }
+        });
+}
+</script>
+
+</body>
+</html>
